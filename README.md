@@ -12,6 +12,11 @@ docker run -p 80:80 movies-suggester-service
 * Install `pip install -r requirements.txt`
 * Run `fastapi run src/main.py --port 80`
 
+### Testing the project
+
+* Run `export PYTHONPATH=$PYTHONPATH:$(pwd)/src`
+* Then run `pytest --cov=src tests/`
+
 ## Using the API
 
 You can connect to the API using http methods to pull data or you can go to `0.0.0.0:80/docs` to test it with Swagger
